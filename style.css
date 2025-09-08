@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  }
+
+/****************   Nav Section **********************/
+nav {
+  /* For the background color*/
+  background-color: #333;
+  color: white;
+
+  /* for the flex layout*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	/* Background color*/
+  background-color: #222;
+  color: #f1f1f1;
+
+  /* Flexbox layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/*********** Splash Page ************************/
+header {
+  background: linear-gradient(to right, #4da6ff, #1a75ff);
+  color: white;
+
+  padding: 50px;
+  min-height: 60vh;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a75ff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+  border: 4px solid #1a75ff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgpa(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.address {
+ font-style: italic;
+ color: #555;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #1a75ff;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #1a75ff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+section a {
+  color: #1a75ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  color: #004080;
+  text-decoration: underline;
+  transition: 0.3 ease;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: block;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2 ease, box-shadow 0.2 ease;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 15px;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 15px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
