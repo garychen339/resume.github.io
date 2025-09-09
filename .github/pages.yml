@@ -1,0 +1,9 @@
+- name: Build with Jekyll
+  uses: actions/jekyll-build-pages@v1
+  with:
+    source: .
+    destination: ./_site
+    future: false
+    build_revision: ${{ github.sha }}
+    verbose: true
+    token: ${{ secrets.GITHUB_TOKEN }}
